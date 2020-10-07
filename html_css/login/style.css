@@ -1,0 +1,60 @@
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("images/Desert.jpg") no-repeat;
+}
+.login-box{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.login-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 5px solid #4caf50;
+    margin-bottom: 10px;
+    padding: 13px 0;
+    text-transform: uppercase;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #4caf50;
+}
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+    margin: 10px;
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    margin: 10px;
+}
+.btn{
+    width: 100%;
+    background: none;
+    border: 2px solid #4caf50;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
