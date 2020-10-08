@@ -4,16 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>{% block title %}Hello City{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        {% endblock %}
     </head>
-    <body>
-        <main role="main">
+    <body class="flex flex-col justify-between items-center min-h-screen">
+        <main role="main" class="my-6">
             {% block body %}{% endblock %}
         </main>
-        <footer>
-            <p>&copy; Copyright {{ 'now'| date('Y') }} &middot;
-                <a href="{{ path('app_about') }}" >About Us</a>
-            </p>
+        <footer class="my-6 flex items-center justify-center flex-col">
+            <p class="text-gray-400">&copy; Copyright {{ 'now'| date('Y') }} &middot;
+                <a class="text-indigo-400 hover:text-indigo-600 underline"
+                        href="{{ path('app_about') }}" >
+                    About Us
+                </a>
+
         </footer>
         {% block javascripts %}{% endblock %}
     </body>

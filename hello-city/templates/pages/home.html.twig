@@ -3,8 +3,12 @@
 {% block title %}Hello City!{% endblock %}
 
 {% block body %}
-    <img src="{{ asset('img/icon.jpg') }}" alt="Quebec Flag">
-    <h1>Hello from Quebec!</h1>
-        <p>It's currently {{ 'now'| date('H:i A') }}.</p>
+    <img class="mt-12 rounded shadow-md"
+            src="{{ asset('img/icon.jpg') }}" alt="Quebec Flag">
+    <h1 class="text-center mt-5 text-3xl sm:text-5xl font-semibold text-indigo-600">
+        Hello from Senegal!
+    </h1>
+        <p class="text-lg text-gray-800 text-center">
+            It's currently {{ 'now'| date('H:i A') }}.</p>
 
 {% endblock %}

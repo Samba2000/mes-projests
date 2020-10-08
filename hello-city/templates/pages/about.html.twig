@@ -3,9 +3,15 @@
 {% block title 'About Us | ' ~ parent() %}
 
 {% block body %}
-    <img src="{{ asset('img/user.png') }}" alt="User logo">
-    <h1>Built with &hearts; by Samba Dramé</h1>
-    <p>
-        <a href="{{ path('app_home') }}" >Revenir à la page d'accueil</a>
+    <img src="{{ asset('img/user.png') }}" alt="User logo"
+    class="rounded shadow-md my-12">
+    <h1 class="mt-5 text-center font-semibold text-gray-700">Built with
+        <span class="text-pink-500">&hearts;</span>
+        by Samba Dramé</h1>
+    <p class="mt-5 text-indigo-400 hover:text-indigo-600 underline text-center">
+        <a href="{{ path('app_home') }}">
+            Revenir à la page d'accueil
+        </a>
     </p>
 {% endblock %}
+
